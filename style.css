@@ -151,9 +151,9 @@ body{
     color: #787885;
 }
 .product-btu{
+    display: flex;
+    justify-content: flex-end;
     margin-top: 30px;
-    position:relative;
-    left: 91%;
 }
 .product-btu a{
     text-decoration: none;
@@ -218,4 +218,28 @@ footer{
 .footer-icon img{
     height: 50px;
     margin: 20px;
+}
+/* Mobile-Screen */
+@media only screen and (max-width:668px){
+    .container-product .container-intro{
+        width: 100%;
+    }
+    .equipment-list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .equipment .navigation .right .intro-image .intro-details .icon .deal{
+        flex-direction: column;
+    }
+}
+/* Ipad-Screen */
+@media only screen and (min-width:668px) and (max-width:992px){
+    .container-product{
+        width: 100%;
+    }
+    .equipment-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .equipment .navigation .right .intro-image .intro-details .icon .deal{
+        flex-direction: column;
+    }
 }
