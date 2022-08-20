@@ -230,6 +230,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .deal-image {
@@ -259,6 +260,7 @@ body {
 
 .deal-details form {
     display: flex;
+    margin: auto;
 }
 
 .deal-details input {
